@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+body {
+  background-color: #47597E;
+  font-family: 'Roboto', sans-serif;
+  color: #293B5F;
+  background-image: url(./assets/fon.png);
+  background-repeat: repeat;
+  background-position: left top;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #B2AB8C;
+  border: 3px solid #293B5F;
+  border-radius: 20px;
+  min-height: 50vh;
+  /* width: 800px; */
+  width: 40%;
+  margin: 50px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-image: url(./assets/green-up.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 200px;
+  background-size: contain;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin: auto 5px;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  font-size: 20px;
+  list-style-type: none;
+  background-color: #DBE6FD;
+  margin: 5px;
+  padding: 10px;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.crossed {
+  background-color: #47597E;
+  text-decoration: line-through 2px #293B5F;
+}
+
+.main-container {
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #293B5F;
+  margin: auto 30px;
+  padding: 10px;
+  border: 3px solid #293B5F;
+}
+
+.btn {
+  font-size: 20px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #293B5F;
+  color: #DBE6FD;
+}
+
+.btnAdd {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.btnDel {
+  margin-top: 10px;
+}
+
+.img-up {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.img-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.imgGreens {
+  width: 220px;
+}
+
+@media all and (max-width: 1100px) {
+  .app {
+    width: 60%;
+    margin: 250px auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 800px) {
+  .app {
+    width: 70%;
+    margin: 150px auto;
+  }
+}
+
+@media all and (max-width: 540px) {
+  body {
+    background-size: contain;
+  }
+  .app {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .header {
+    height: 180px;
+  }
+  h1 {
+    text-shadow: 0 0 5px #B2AB8C, 0 0 3px #DBE6FD;
+  }
+  input {
+    font-size: 18px;
+    margin: auto 10px;
+  }
+  .imgGreens {
+    width: 190px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .app {
+    width: 95%;
+    margin: 25px auto;
+  }
+  .header {
+    height: 150px;
+    margin: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    font-size: 15px;
+    margin: auto 5px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .imgGreens {
+    width: 150px;
   }
 }
